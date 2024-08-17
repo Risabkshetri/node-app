@@ -1,29 +1,35 @@
-// // let number  = 20
+// usecase of common js pattern
 
-// // console.log(number)
+// const lib = require('./lib.js')
 
-// const array = []
-// let pos, ele, size;
+// console.log("sum is ",lib.sum(4,5))
 
-// console.log("Enter size of array: ", size)
-// for(let i = 0; i<size; i++){
-//     array = array.push(arr[i])
-// }
 
-// console.log(array)
+// // usecase of module pattern
 
-const readline = require('readline');
+// import {sum, diff} from './lib.js'
 
-// Create an interface to read data from the terminal
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// console.log("sum is ",sum(4,5))
 
-// Prompt the user for input
-rl.question('Enter a value: ', (answer) => {
-  console.log(`You entered: ${answer}`);
+// console.log("diff is ",diff(4,5))
 
-  // Close the readline interface
-  rl.close();
-});
+
+
+const fs = require('fs');
+const t1 = performance.now()
+// console.log(t1)
+const txt = fs.readFileSync("demo.txt","utf-8")
+
+// const txt = fs.readFile("demo.txt","utf-8", (err, data) => {
+//     if (err) {
+//         console.log(err)
+//     } else {
+//         console.log(data)
+//     }
+// })
+console.log(txt);
+const t2 = performance.now()
+// console.log(t2)
+console.log("hello world");
+
+console.log(t2-t1)
