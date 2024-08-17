@@ -1,3 +1,19 @@
 {
-    "type": "commonjs"
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "a create of node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rishab Kshetri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
 }
