@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Platform</title>
+</head>
+<body>
+    <div class="product-card" data-id="1">
+        <img src="https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png" alt="Essence Mascara Lash Princess" class="product-thumbnail">
+        <h2 class="product-title">Essence Mascara Lash Princess</h2>
+        <p class="product-description">The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.</p>
+        <div class="product-details">
+          <span class="product-price">$9.99</span>
+          <span class="product-discount">7.17% off</span>
+          <div class="product-rating" data-rating="4.94">
+            <span class="stars"></span>
+            <span class="rating-value">4.94</span>
+          </div>
+        </div>
+        <div class="product-meta">
+          <span class="product-brand">Brand: Essence</span>
+          <span class="product-sku">SKU: RCH45Q1A</span>
+          <span class="product-category">Category: Beauty</span>
+        </div>
+        <div class="product-availability">
+          <span class="stock-status">Low Stock</span>
+          <span class="stock-quantity">5 in stock</span>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+    .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px 0px violet;
+    padding: 16px;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .product-discount {
+    color: #4CAF50;
+    font-size: 14px;
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    color: #FFD700;
+  }
+  
+  .product-meta, .product-availability {
+    font-size: 12px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+</style>
+</html>
