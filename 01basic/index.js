@@ -37,8 +37,11 @@
 
 // // understanding npm
 
-const express = require('express');
+const {sum, diff} = require('./lib.js')
 
-console.log("hello world")
-const server = express();
-server.listen(8080)
+console.log(diff(5,5)) 
+// const express = require('express');
+
+// console.log("hello world")
+// const server = express();
+// server.listen(8080)

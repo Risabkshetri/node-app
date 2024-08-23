@@ -38,7 +38,7 @@ const server = http.createServer((req, res) => {
     // res.setHeader('Content-Type', 'application/json')
     // res.end(data)
 
-    if(req.url.startsWith('/product')) {
+    if(req.url.startsWith('/product')){
        const id = req.url.split('/')[2]
      const product = data.find(item => item.id === (+id))
             res.setHeader('Content-Type', 'text/html')
@@ -87,4 +87,4 @@ const server = http.createServer((req, res) => {
     }
 })
 
-server.listen(8080)
+server.listen((8080), () => console.log("server running on port 8080"))
