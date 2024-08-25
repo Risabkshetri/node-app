@@ -4,16 +4,6 @@ const mongoose = require('mongoose');
 const Product = model.Product;
 
 // Create
-// exports.createProduct = async (req, res) => {
-//   try {
-//     const product = new Product(req.body);
-//     const savedProduct = await product.save();
-//     res.json(savedProduct);
-//   } catch (err) {
-//     res.status(400).json({ error: err.message });
-//   }
-// };
-
 exports.createProduct = async (req, res) => {
   try {
     let result;
@@ -70,17 +60,6 @@ exports.updateProduct = async (req, res) => {
     res.status(400).json(err);
   }
 };
-// exports.deleteProduct = async (req, res) => {
-//   const id = req.params.id;
-//   try{
-//   const doc = await Product.findOneAndDelete({_id:id})
-//   res.status(201).json(doc);
-//   }
-//   catch(err){
-//     console.log(err);
-//     res.status(400).json(err);
-//   }
-// };
 
 exports.deleteProduct = (async (req, res) => {
   try {
