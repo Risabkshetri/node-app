@@ -61,7 +61,7 @@ exports.updateProduct = async (req, res) => {
   }
 };
 
-exports.deleteProduct = (async (req, res) => {
+exports.deleteProduct = async (req, res) => {
   try {
     const deletedProduct = await Product.findByIdAndDelete(req.params.id);
     if (!deletedProduct) {
@@ -71,4 +71,4 @@ exports.deleteProduct = (async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Error deleting product", error: error.message });
   }
-});
+};

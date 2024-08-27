@@ -19,6 +19,8 @@ async function main() {
   console.log('database connected')
 }
 
+
+
 //bodyParser
 server.use(cors());
 server.use(express.json());
