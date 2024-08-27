@@ -1,5 +1,5 @@
 const fs = require('fs');
-const index = fs.readFileSync('index.html', 'utf-8');
+const index = fs.readFileSync('./pages/index.html', 'utf-8');
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -11,7 +11,7 @@ server.use(morgan('default'))
 server.use(express.static('public'));
 
 server.get('/', (req, res) => {
-  res.sendFile(path.resolve(__dirname,'index.html'), (err) => {
+  res.sendFile(path.resolve(__dirname, 'pages','index.html'), (err) => {
     if (err) {
       res.status(404).send('File not found');
     }
